@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Restaurant Booking</title>
+
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome Back</h1>
+
+        <p>Login to book your favourite restaurant</p>
+
+        <form id="loginForm">
+
+            <input type="email"
+                   id="loginEmail"
+                   placeholder="Email Address"
+                   required>
+
+            <input type="password"
+                   id="loginPassword"
+                   placeholder="Password"
+                   required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>
+            Don't have an account?
+            <a href="index.html">Register</a>
+        </p>
+
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const email = document.getElementById("loginEmail").value;
+        const password = document.getElementById("loginPassword").value;
+
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+
+        if (!storedUser) {
+            alert("Please register first.");
+            return;
+        }
+
+        if (email === storedUser.email && password === storedUser.password) {
+
+            // Save the logged-in user's name
+            localStorage.setItem("loggedInUser", storedUser.name);
+
+            alert("Login successful!");
+
+            window.location.href = "dashboard.html";
+
+        } else {
+            alert("Invalid email or password!");
+        }
+    });
+}
+    </script>
+
+</body>
+
+</html>

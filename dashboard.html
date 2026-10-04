@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Booking Dashboard</title>
+
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+            <h1>Restaurant Booking</h1>
+
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+
+        <!-- Dashboard Content -->
+        <main>
+
+            <!-- Welcome Message -->
+            <h2 id="welcome">Welcome</h2>
+
+            <p class="dashboard-description">
+                Choose your favourite food and book your table.
+            </p>
+
+
+            <!-- 6 Restaurant Cards -->
+            <div class="restaurant-container">
+
+
+                <!-- Card 1 -->
+                <div class="restaurant-card">
+
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80"
+                        alt="Vegetarian Meals">
+
+                    <div class="restaurant-info">
+
+                        <h3>Vegetarian Meals</h3>
+
+                        <p>
+                            Healthy and delicious vegetarian meals.
+                        </p>
+
+                        <select class="food-select">
+                            <option value="">Other Items</option>
+                            <option>North Indian Thali</option>
+                            <option>Paneer Butter Masala</option>
+                            <option>Mushroom Fried Rice</option>
+                            <option>Dal Curry</option>
+                            <option>Veg Soup</option>
+                        </select>
+
+
+                        <button class="book-btn" id="book1">
+                            Book
+                        </button>
+
+                        <button class="cancel-btn" id="cancel1">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="restaurant-card">
+
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+                        alt="Non Veg Meals">
+
+                    <div class="restaurant-info">
+
+                        <h3>Non-Veg Meals</h3>
+
+                        <p>
+                            Delicious chicken and meat dishes.
+                        </p>
+
+                        <select class="food-select">
+                            <option value="">Other Items</option>
+                            <option>Chicken Fried Rice</option>
+                            <option>Chicken 65</option>
+                            <option>Butter Chicken</option>
+                            <option>Mutton Curry</option>
+                            <option>Fish Fry</option>
+                        </select>
+
+
+
+                        <button class="book-btn" id="book2">
+                            Book
+                        </button>
+
+                        <button class="cancel-btn" id="cancel2">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="restaurant-card">
+
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                        alt="Fast Food">
+
+                    <div class="restaurant-info">
+
+                        <h3>Fast Food</h3>
+
+                        <p>
+                            Pizza, burgers and quick bites.
+                        </p>
+
+                        <select class="food-select">
+                            <option value="">Other Items</option>
+                            <option>Chicken Burger</option>
+                            <option>French Fries</option>
+                            <option>Veg Sandwich</option>
+                            <option>Chicken Pizza</option>
+                            <option>Pasta</option>
+                        </select>
+
+
+
+                        <button class="book-btn" id="book3">
+                            Book
+                        </button>
+
+                        <button class="cancel-btn" id="cancel3">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="restaurant-card">
+
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=600&q=80"
+                        alt="Beverages">
+
+                    <div class="restaurant-info">
+
+                        <h3>Beverages</h3>
+
+                        <p>
+                            Fresh juices and refreshing drinks.
+                        </p>
+
+                        <select class="food-select">
+                            <option value="">Other Items</option>
+                            <option>Orange Juice</option>
+                            <option>Rose Milk</option>
+                            <option>Lemon Juice</option>
+                            <option>Milkshake</option>
+                            <option>Fresh Lime Soda</option>
+                        </select>
+
+
+
+                        <button class="book-btn" id="book4">
+                            Book
+                        </button>
+
+                        <button class="cancel-btn" id="cancel4">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 5 -->
+                <div class="restaurant-card">
+
+                    <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80"
+                        alt="Family Combo">
+
+                    <div class="restaurant-info">
+
+                        <h3>Family Combo</h3>
+
+                        <p>
+                            Special combo meals for the whole family.
+                        </p>
+
+                        <select class="food-select">
+                            <option value="">Other Items</option>
+                            <option>Chicken Biryani</option>
+                            <option>Veg Fried Rice</option>
+                            <option>Chicken 65</option>
+                            <option>Paneer Butter Masala</option>
+                            <option>Gobi Manchurian</option>
+                        </select>
+
+
+
+                        <button class="book-btn" id="book5">
+                            Book
+                        </button>
+
+                        <button class="cancel-btn" id="cancel5">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 6 -->
+                <div class="restaurant-card">
+
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80"
+                        alt="Dessert Corner">
+
+                    <div class="restaurant-info">
+
+                        <h3>Dessert Corner</h3>
+
+                        <p>
+                            Cakes, ice cream and sweet treats.
+                        </p>
+
+                        <select class="food-select">
+                            <option value="">Other Items</option>
+                            <option>Gulab Jamun</option>
+                            <option>Vanilla Ice Cream</option>
+                            <option>Falooda</option>
+                            <option>Kulfi</option>
+                            <option>Chocolate Cake</option>
+                        </select>
+
+
+
+                        <button class="book-btn" id="book6">
+                            Book
+                        </button>
+
+                        <button class="cancel-btn" id="cancel6">
+                            Cancel
+                        </button>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script>
+
+        // REGISTER
+
+
+        const registerForm = document.getElementById("registerForm");
+
+        if (registerForm) {
+
+            registerForm.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const confirmPassword = document.getElementById("confirmPassword").value;
+
+                if (password !== confirmPassword) {
+
+                    alert("Passwords do not match!");
+                    return;
+                }
+
+                const user = {
+                    name: name,
+                    email: email,
+                    password: password
+                };
+
+                localStorage.setItem("user", JSON.stringify(user));
+
+                alert("Registration successful!");
+
+                window.location.href = "login.html";
+            });
+        }
+
+
+        // LOGIN
+       
+
+        const loginForm = document.getElementById("loginForm");
+
+        if (loginForm) {
+
+            loginForm.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+
+                const email = document.getElementById("loginEmail").value;
+                const password = document.getElementById("loginPassword").value;
+
+                const storedUser = JSON.parse(localStorage.getItem("user"));
+
+                if (!storedUser) {
+
+                    alert("Please register first!");
+                    return;
+                }
+
+                if (
+                    email === storedUser.email &&
+                    password === storedUser.password
+                ) {
+
+                    // Save logged-in user's name
+                    localStorage.setItem("loggedInUser", storedUser.name);
+
+                    alert("Login successful!");
+
+                    window.location.href = "dashboard.html";
+
+                } else {
+
+                    alert("Invalid email or password!");
+
+                }
+            });
+        }
+
+
+        
+        // DASHBOARD
+     
+
+        const dashboard = document.querySelector(".dashboard");
+
+        if (dashboard) {
+
+          
+            // CHECK LOGIN
+         
+
+            const loggedInUser = localStorage.getItem("loggedInUser");
+
+            if (!loggedInUser) {
+
+                alert("Please login first!");
+
+                window.location.href = "login.html";
+
+            } else {
+
+                document.getElementById("welcome").textContent =
+                    "Welcome, " + loggedInUser;
+            }
+
+
+            
+            // BOOKING
+        
+
+            for (let i = 1; i <= 6; i++) {
+
+                const bookButton = document.getElementById("book" + i);
+                const cancelButton = document.getElementById("cancel" + i);
+
+                // Get the dropdown for this card
+                const foodSelect =
+                    document.querySelectorAll(".food-select")[i - 1];
+
+
+               
+                // BOOK BUTTON
+                
+
+                bookButton.addEventListener("click", function () {
+
+                   
+                    const selectedItem = foodSelect.value;
+
+                 
+                    if (selectedItem === "") {
+
+                        alert("Please select an item first!");
+
+                        return;
+                    }
+
+
+                    const existingBooking =
+                        localStorage.getItem("booking" + i);
+
+
+                    if (existingBooking) {
+
+                        alert("Already booked!");
+
+                    } else {
+
+                       
+                        localStorage.setItem(
+                            "booking" + i,
+                            selectedItem
+                        );
+
+                        alert(
+                            selectedItem +
+                            " - Order booked successfully!"
+                        );
+                    }
+
+                });
+
+                // CANCEL BUTTON
+               
+
+                cancelButton.addEventListener("click", function () {
+
+                    const existingBooking =
+                        localStorage.getItem("booking" + i);
+
+
+                    if (!existingBooking) {
+
+                        alert("No order to cancel!");
+
+                    } else {
+
+                        localStorage.removeItem("booking" + i);
+
+                        alert(
+                            existingBooking +
+                            " - Order cancelled successfully!"
+                        );
+
+                        foodSelect.value = "";
+                    }
+
+                });
+
+            }
+
+
+            // LOGOUT
+
+            const logoutButton =
+                document.getElementById("logoutBtn");
+
+
+            logoutButton.addEventListener("click", function () {
+
+                const confirmLogout =
+                    confirm("Are you sure you want to logout?");
+
+
+                if (confirmLogout) {
+
+                    localStorage.removeItem("loggedInUser");
+
+                    window.location.href = "index.html";
+
+                }
+
+
+            });
+
+        }
+    </script>
+</body>
+
+</html>
